@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: space-between;
 }
+.top-margin-screen {
+  margin-top: 88px;
+}
+
 .user-component__avatar {
   width: 70px;
   height: 70px;
@@ -12,7 +16,10 @@
   background-color: wheat;
   margin-right: 20px;
 }
-
+.user-component__text h4 {
+  font-weight: 600;
+  color: #000000;
+}
 .user-component__title {
   font-weight: bold;
   font-size: 20px;
@@ -31,9 +38,19 @@
   height: 60px;
   border-radius: 30px;
 }
-.user-component__title---not-bol {
-  font-weight: 400;
-}
+
 .user-component__col:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--font-alpha);
+}
+.user-component__right-col {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.user-component__subtitle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
