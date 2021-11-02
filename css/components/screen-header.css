@@ -1,21 +1,62 @@
+@keyframes rotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+
 .screen-header {
-  width: 100%;
   position: fixed;
   top: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--horizontal-space);
+  width: 100%;
+  padding: 15px var(--horizontal-space);
   box-sizing: border-box;
   z-index: 1;
   background-color: white;
 }
-
 .screen-header__title {
   font-size: 32px;
+  text-align: center;
   font-weight: 600;
 }
-
 .screen-header__icons span {
-  margin-left: 25px;
+  margin-left: 15px;
+}
+.screen-header__icons span:last-child {
+  position: relative;
+}
+.screen-header__icons .fa-cog:hover {
+  animation: rotate 1s linear infinite;
+}
+.setting-header {
+  position: fixed;
+  top: 26px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.setting-header div {
+  width: 65px;
+}
+.setting-header div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.setting-header__title {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+.setting-header__right-icons span:last-child {
+  margin-left: 20px;
 }

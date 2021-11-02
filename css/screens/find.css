@@ -1,0 +1,114 @@
+@keyframes heartbeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+/* ------------------------------*/
+.recommended-friends {
+  border-bottom: var(--border-line);
+  border-top: var(--border-line);
+  padding: 25px 0px;
+}
+.recommended-friends__title {
+  color: var(--font-alpha);
+}
+.recommended-friends span {
+  display: block;
+  margin: 100px 0px;
+  text-align: center;
+  color: var(--font-alpha);
+  font-weight: 400;
+  font-size: 20px;
+}
+/* ------------------------------*/
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+/* ------------------------------*/
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  border-bottom: var(--border-line);
+}
+.open-post__col {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+}
+.open-post__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.open-post__title ~ * {
+  color: var(--font-alpha);
+  font-weight: 500;
+}
+.open-post__col__text-col > * {
+  padding: 5px 0px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+}
+/* ------------------------------*/
+.open-post__members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.open-post__members > img ~ * {
+  padding-left: 5px;
+}
+.open-post__members__avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: tomato;
+}
+.open-post__member-status {
+  color: #ffb0e0;
+  font-weight: 500;
+}
+/* ------------------------------*/
+.open-post__main-image {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.open-post__main-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: mediumaquamarine;
+}
+.open-post__main-image span {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 12px;
+  border-radius: 20px;
+  right: 7px;
+  bottom: 7px;
+}
+.open-post__main-image span:hover i {
+  will-change: transform;
+  animation: heartbeat 2s linear infinite;
+}
+/* ------------------------------*/
